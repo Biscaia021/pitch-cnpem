@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator Pitch - Rafael Freitas de Carvalho</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .links-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+        }
+
+        .links-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .links-section p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+        }
+
+        .btn i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+            transition: color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            transform: scale(1.05);
+        }
+
+        .btn:hover i {
+            color: #ffffff;
+        }
+
+        .btn span {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .btn-group { gap: 15px; }
+            .btn { width: 100px; height: 100px; }
+            .btn i { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Rafael Freitas de Carvalho</h1>
+            <h2>Ciência da Computação (6º Sem) • Universidade Estácio de Sá</h2>
+            <p>Candidato — PUE CNPEM 2027 | Plataformas Computacionais / Arquiteto de Sistemas</p>
+        </header>
+
+        <div class="card">
+            <h3><i class="fas fa-server"></i> Perfil & Experiência</h3>
+            <p>Tenho uma atuação pragmática focada em <span class="highlight">Desenvolvimento Backend e Infraestrutura em Cloud</span>. Durante 11 meses, trabalhei na modernização tecnológica da PGERJ, onde fui responsável por migrar um sistema legado estruturado em PHP para APIs modernas e eficientes, desenvolvidas com FastAPI e Django.</p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-brain"></i> NLP & Segurança em Cloud</h3>
+            <p>Minha vivência técnica também inclui o desenvolvimento de pipelines de <span class="highlight">Processamento de Linguagem Natural (NLP)</span> para buscas semânticas estruturadas utilizando modelos do Hugging Face, além de atuar ativamente com segurança de dados — aplicando criptografia AES de alto nível — e otimização de infraestrutura na AWS.</p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-rocket"></i> Visão para o CNPEM</h3>
+            <p>Avaliando o cenário do CNPEM, compreendo que o desafio estrutural atual exige <span class="highlight">forte sustentação de dados em larga escala</span> para escalar as plataformas computacionais. Posso gerar impacto imediato através da integração de sistemas em Python com bancos de dados não-relacionais e, a longo prazo, aplicar padrões de Cloud e DevOps (como conteinerização) para garantir a redução de latência.</p>
+        </div>
+
+        <div class="links-section">
+            <h3>Aberto para Validação Técnica</h3>
+            <p>Explore a arquitetura dos meus projetos e comprove os resultados. Clique nos links abaixo:</p>
+            
+            <div class="btn-group">
+                <a href="https://biscaia021.github.io/" target="_blank" class="btn">
+                    <i class="fas fa-globe"></i>
+                    <span>Portfólio Web</span>
+                </a>
+                <a href="https://github.com/Biscaia021" target="_blank" class="btn">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Principal</span>
+                </a>
+                <a href="https://github.com/Biscaia021/NLP" target="_blank" class="btn">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Pipeline NLP</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
